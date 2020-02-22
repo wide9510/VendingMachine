@@ -30,6 +30,66 @@
         });
         map.setMapTypeId('satellite');
         map.data.loadGeoJson('Vending.json')
+        var features = [
+          {
+            position: new google.maps.LatLng(40.008253, -105.267504),
+            title: 'ATLAS Vending'
+          }, {
+            position: new google.maps.LatLng(40.006156, -105.265838),
+            title: 'Farrand Vending'
+          }, {
+            position: new google.maps.LatLng(40.008165, -105.267490),
+            title: 'Duane Vending'
+          }, {
+            position: new google.maps.LatLng(40.007615, -105.261845),
+            title: 'DLC Vending'
+          }, {
+            position: new google.maps.LatLng(40.007792, -105.272740),
+            title: 'Hellems Vending'
+          }, {
+            position: new google.maps.LatLng(40.008852, -105.270805),
+            title: 'Norlin Vending'
+          }, {
+            position: new google.maps.LatLng(40.004513, -105.264936),
+            title: 'C4C Vending'
+          }, {
+            position: new google.maps.LatLng(40.006946, -105.262822),
+            title: 'CSEL Vending'
+          }, {
+            position: new google.maps.LatLng(40.007127, -105.269241),
+            title: 'Environmental Design Vending'
+          }, {
+            position: new google.maps.LatLng(40.009292, -105.274895),
+            title: 'Hale Vending'
+          }, {
+            position: new google.maps.LatLng(40.007028, -105.271953),
+            title: 'UMC Vending'
+          }, {
+            position: new google.maps.LatLng(40.005816, -105.263397),
+            title: 'Koelbel Vending'
+          }, {
+            position: new google.maps.LatLng(40.008051, -105.264328),
+            title: 'Math Library Vending'
+          }, {
+            position: new google.maps.LatLng(40.009186, -105.268170),
+            title: 'Stadium Vending'
+          }, {
+            position: new google.maps.LatLng(40.008276, -105.274284),
+            title: 'Geography Vending'
+          }, {
+            position: new google.maps.LatLng(40.004500, -105.266999),
+            title: 'Regent Vending'
+          }
+        ];
+
+        features.forEach(function(feature){
+          var marker = new google.maps.Marker({
+            position: feature.position,
+            title: feature.title,
+            map: map
+          });
+        });
+
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgZLx73_rqG_XUtIaVulTk8qucEEnvClM&callback=initMap"
