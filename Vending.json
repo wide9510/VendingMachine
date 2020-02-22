@@ -1,0 +1,34 @@
+{
+  "type": "FeatureCollection",
+  "features":[
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [40.006156, -105.265838]
+    },
+    "properties": {
+      "name": "Farrand Hall Vending Machine"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [40.00284, 105.16111]
+    },
+    "properties": {
+      "name": "ATLAS Vending Machine"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [40.00297, 105.16030]
+    },
+    "properties": {
+      "name": "Duane Physics Vending Machine"
+    }
+  },
+]}
