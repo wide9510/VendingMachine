@@ -2,7 +2,7 @@
 <!-- https://developers.google.com/maps/documentation/javascript/importing_data -->
 <html>
   <head>
-    <title>Simple Map</title>
+    <title>Vending Machine Finder</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <style>
@@ -29,6 +29,7 @@
           zoom: 19
         });
         map.setMapTypeId('satellite');
+        map.data.loadGeoJson('Vending.json')
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgZLx73_rqG_XUtIaVulTk8qucEEnvClM&callback=initMap"
